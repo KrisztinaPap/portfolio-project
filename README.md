@@ -16,3 +16,6 @@ August 28, 2020
 
 ## Trello Project Board
 https://trello.com/b/1UNFvxnZ/milestone-resume-portfolio
+
+## Figma Project Board
+https://www.figma.com/file/Jm2z9uP5uzFyUlgmyKJNd8/Milestone-project---Resume%2Fportfolio?node-id=0%3A1
