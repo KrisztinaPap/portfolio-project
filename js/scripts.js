@@ -13,8 +13,5 @@ function sendMail() {
     //      The below two lines of code build the email message from the variables we prompted the user for and then we use the user's email software in a new window to send the message
     const yourEmailMessage = `mailto:${myEmail}?cc=${eAddress}&subject=${eSubject}&body=${eBody}`;
     window = window.open(yourEmailMessage, 'emailWindow');
-
-    contactForm.submit();
-    contactForm.clear();
 };
 
