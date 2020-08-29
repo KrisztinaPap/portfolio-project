@@ -173,14 +173,14 @@
         </section>
 
         <section id="contact">
-            <form action="#">
-                <label for="emailAddress">Your email address:</label><br>
-                <input type="text" id="emailAddress" name="emailAddress" value=""><br>
-                <label for="emailSubject">Last name:</label><br>
-                <input type="text" id="emailSubject" name="emailSubject" value=""><br><br>
+            <form action="#" method="post" onsubmit="sendMail();" return false enctype="text/plain" id="contactForm">
+                <label for="emailAddress">Your email address:</label>
+                <input type="text" id="emailAddress" name="emailAddress" value="">
+                <label for="emailSubject">Email subject:</label>
+                <input type="text" id="emailSubject" name="emailSubject" value="">
                 <p>Your message:</p>
-                <textarea name="emailBody" rows="5" cols="30"></textarea>
-                <input type="submit" value="Send Email">
+                <textarea name="emailBody" id="emailBody" rows="5" cols="30"></textarea>
+                <button type="submit">Send Email</button>
             </form>
         </section>
     </main>

@@ -8,11 +8,12 @@ To build a nice resume/portfolio site using HTML, CSS, and JavaScript
 Krisztina Pap
 
 ## Last Edit
-August 28, 2020
+August 29, 2020
 
 ## Resources
 - [Normalize.css](https://cssreset.com/scripts/normalize-css/)
-
+- [StackOverflow: mailto using javascript](https://stackoverflow.com/questions/21028939/mailto-using-javascript)
+- [Webdeveloper.com: Javascript Mailto form](https://www.webdeveloper.com/d/229947-javascript-mailto-form)
 
 ## Trello Project Board
 https://trello.com/b/1UNFvxnZ/milestone-resume-portfolio
