@@ -1,0 +1,51 @@
+:root {
+    --main-gray: #545454;
+    --main-orange: #F27D16;
+    --main-white: #F2F2F2;
+    --main-blue: #367DD9;
+    --main-red: #A6122D;
+    --main-black: #000000;
+}
+
+.topNav {
+    overflow: hidden;
+    background-color: var(--main-gray);
+  }
+  
+.topNav #myMenu {
+    display: none;
+}
+
+.topNav a {
+    color: var(--main-white);
+    padding: 14px 14px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+.topNav a.icon {
+    background: var(--main-black);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topNav a:hover {
+    background-color: var(--main-white);
+    color: var(--main-black);
+}
+  
+.active {
+    background-color: var(--main-gray);
+    color: var(--main-white);
+}
+
+#logo {
+
+    left: 0;
+    top: 0;
+    height: 42px;
+    border-radius: 50%;
+}

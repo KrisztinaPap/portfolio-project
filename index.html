@@ -17,6 +17,20 @@
 </head>
 <body>
     <header>
+        <nav class="topNav" id="topNav">
+            <a href="#home" class="active"><img id="logo" src="/images/kp-logo-transparent.png" alt="Krisztina Pap logo"></a>
+            <div id="myMenu">
+                <a href="#objectives">Objectives</a>
+                <a href="#workExperience">Work Experience</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact Me</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myMenu()"><i class="fa fa-bars"></i></a>
+        </nav>
+
+        
+
+
         <h1>Krisztina Pap</h1>
         <h2>Full-stack Software Developer</h2>
     </header>
@@ -29,6 +43,8 @@
 
         <section id="skills">
             C.A.R.P (Contrast, Alignment, Repetition, and Proximity)
+            Agile
+            SCRUM
         </section>
 
         <section id="workExperience">
@@ -173,6 +189,7 @@
         </section>
 
         <section id="contact">
+            <h3>Contact me!</h3>
             <form action="#" method="post" onsubmit="sendMail(); return false " enctype="text/plain" id="contactForm">
                 <label for="emailAddress">Your email address:</label>
                 <input type="text" id="emailAddress" name="emailAddress" value="">

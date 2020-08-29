@@ -14,6 +14,7 @@ August 29, 2020
 - [Normalize.css](https://cssreset.com/scripts/normalize-css/)
 - [StackOverflow: mailto using javascript](https://stackoverflow.com/questions/21028939/mailto-using-javascript)
 - [Webdeveloper.com: Javascript Mailto form](https://www.webdeveloper.com/d/229947-javascript-mailto-form)
+- [w3schools: Mobile Navbar](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar)
 
 ## Trello Project Board
 https://trello.com/b/1UNFvxnZ/milestone-resume-portfolio
