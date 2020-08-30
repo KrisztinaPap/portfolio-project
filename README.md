@@ -16,6 +16,7 @@ August 29, 2020
 - [Webdeveloper.com: Javascript Mailto form](https://www.webdeveloper.com/d/229947-javascript-mailto-form)
 - [w3schools: Mobile Navbar](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar)
 - [Pixabay: programming photo (no attribution required)](https://pixabay.com/illustrations/web-network-programming-3706562/)
+- [Pixabay: photo of laptop (no attribution required)](https://pixabay.com/photos/keyboard-computer-technology-light-5017973/)
 - [Wais Ideas: How to Add a Responsive Background Using CSS](https://youtu.be/n67zLcZV8f0)
 
 
