@@ -15,6 +15,9 @@ August 29, 2020
 - [StackOverflow: mailto using javascript](https://stackoverflow.com/questions/21028939/mailto-using-javascript)
 - [Webdeveloper.com: Javascript Mailto form](https://www.webdeveloper.com/d/229947-javascript-mailto-form)
 - [w3schools: Mobile Navbar](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar)
+- [Pixabay: programming photo (no attribution required)](https://pixabay.com/illustrations/web-network-programming-3706562/)
+- [Wais Ideas: How to Add a Responsive Background Using CSS](https://youtu.be/n67zLcZV8f0)
+
 
 ## Trello Project Board
 https://trello.com/b/1UNFvxnZ/milestone-resume-portfolio
