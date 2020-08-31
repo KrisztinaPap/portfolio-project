@@ -112,6 +112,11 @@ li {
     border-radius: 15px;
 }
 
+.orangeButton:hover,
+.orangeButton:focus {
+    box-shadow: 10px 10px 5px var(--main-gray);
+}
+
 .expandIcon {  
     width: 80vw;
     text-align: left;
@@ -137,6 +142,10 @@ li {
     padding: 10px 40px;
     margin: 16px auto;
     display:block;
+}
+
+#sendMailButton:hover {
+    box-shadow: 10px 10px 5px grey;
 }
 
 input {
@@ -205,6 +214,11 @@ h3 {
     color: var(--main-white);
 }
 
+#links a:hover,
+#links a:focus {
+    color: var(--main-orange);
+}
+
 .photo {
     width: 100%;
     height: 170px;
@@ -213,4 +227,5 @@ h3 {
     margin-top: 2rem;
     border-radius: 15px;
     filter: grayscale(50%);
+    border: 2px solid var(--main-orange);
 }
