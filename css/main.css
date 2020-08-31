@@ -85,6 +85,16 @@ li {
     padding-left: 0;
 }
 
+#freelancer li:first-child,
+#eslInstructor li:first-child,
+#executiveAssociate li:first-child,
+#timeEntryLead li:first-child,
+#trainingSpecialist li:first-child {
+    list-style-type: none;
+    margin-left: -20px;
+    margin-right:15 px;
+}
+
 #formalEducation {
     display: block;
 }
@@ -131,4 +141,8 @@ h4 {
     font-size: 0.7rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+
+#footer ul {
+    display: inline-block;
 }
