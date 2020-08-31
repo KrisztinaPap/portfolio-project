@@ -64,13 +64,12 @@ main {
 
 /****************** Dropdown list style settings *******************/
 
-#frontEnd > ul,
-#backEnd > ul,
-#databases > ul,
-#devOps > ul,
-#dataScience > ul,
-#softSkills > ul {
+ul {
     display: none;
+}
+
+#education ul {
+    display: block;
 }
 
 /****************** Header style settings *******************/
