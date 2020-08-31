@@ -49,9 +49,9 @@ function myMenu() {
 //Citation:
 //      https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar
 //      The below code block hides/shows my nav menu
-function myFrontEndSkills() {
-  let x = frontEnd;
-  console.log(frontEnd);
+function showHideMyInfo( button ) {
+  let x = button.nextElementSibling;
+  
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {

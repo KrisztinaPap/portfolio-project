@@ -62,8 +62,14 @@ main {
     color: var(--main-white);
 }
 
+/****************** Dropdown list style settings *******************/
 
-#frontEnd {
+#frontEnd > ul,
+#backEnd > ul,
+#databases > ul,
+#devOps > ul,
+#dataScience > ul,
+#softSkills > ul {
     display: none;
 }
 
