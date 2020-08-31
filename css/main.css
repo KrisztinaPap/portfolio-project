@@ -204,3 +204,13 @@ h3 {
 #links a {
     color: var(--main-white);
 }
+
+.photo {
+    width: 100%;
+    height: 170px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 2rem;
+    border-radius: 15px;
+    filter: grayscale(50%);
+}

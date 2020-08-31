@@ -48,7 +48,7 @@ function myMenu() {
 
 //Citation:
 //      https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar
-//      The below code block hides/shows my nav menu
+//      The below code block was modified to show/hide blocks of the code (expanding buttons)
 function showHideMyInfo( button ) {
   let x = button.nextElementSibling;
   
