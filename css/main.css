@@ -62,6 +62,11 @@ main {
     color: var(--main-white);
 }
 
+
+#frontEnd {
+    display: none;
+}
+
 /****************** Header style settings *******************/
 
 h1,
