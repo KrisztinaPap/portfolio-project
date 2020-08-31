@@ -5,6 +5,15 @@
     --main-blue: #367DD9;
     --main-red: #A6122D;
     --main-black: #000000;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Russo One', sans-serif;
 }
 
 .topNav {
