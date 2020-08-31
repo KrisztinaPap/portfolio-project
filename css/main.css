@@ -13,6 +13,7 @@
 
 main {
     margin: 8px;
+    text-align: center;
 }
 
 /****************** Navigation styles *******************/
@@ -62,14 +63,46 @@ main {
     color: var(--main-white);
 }
 
-/****************** Dropdown list style settings *******************/
+/****************** Expanding area style settings *******************/
 
 ul {
     display: none;
+    text-align: left;
+
+}
+
+li {
+    padding-top: 4px;
+}
+
+#frontEnd ul,
+#backEnd ul,
+#databases ul,
+#devOps ul,
+#dataScience ul {
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0;
 }
 
 #formalEducation {
     display: block;
+}
+
+.expandIcon {
+    background-color: var(--main-orange);
+    color: var(--main-white);
+    font-family: 'Russo One', sans-serif;
+    font-size: 18px;
+    width: 80vw;
+    text-align: left;
+    border-radius: 15px;
+    padding: 2px;
+}
+
+i {
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 /****************** Header style settings *******************/
