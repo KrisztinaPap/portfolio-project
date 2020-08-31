@@ -1,3 +1,5 @@
+/****************** Global style settings *******************/
+
 :root {
     --main-gray: #545454;
     --main-orange: #F27D16;
@@ -9,12 +11,11 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4 {
-    font-family: 'Russo One', sans-serif;
+main {
+    margin: 8px;
 }
+
+/****************** Navigation styles *******************/
 
 .topNav {
     overflow: hidden;
@@ -61,10 +62,22 @@ h4 {
     color: var(--main-white);
 }
 
+/****************** Header style settings *******************/
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+}
+
 #logo {
     height: 40px;
     border-radius: 50%;
 }
+
+/****************** Footer style settings *******************/
 
 #footer {
     background-color: var(--main-gray);
