@@ -27,9 +27,9 @@ h4 {
 
 .topNav a {
     color: var(--main-white);
-    padding: 10px;
+    padding: 8px;
     text-decoration: none;
-    font-size: 28px;
+    font-size: 20px;
     display: block;
 }
 
@@ -37,6 +37,7 @@ h4 {
     background: var(--main-orange);
     display: block;
     position: absolute;
+    font-size: 28px;
     right: 6px;
     top: 4px;
 }
@@ -44,6 +45,15 @@ h4 {
 .topNav a:hover {
     background-color: var(--main-white);
     color: var(--main-orange);
+}
+
+.topNav hr {
+   
+    border-top: 1px solid var(--main-white);
+}
+
+.topNav hr:last-of-type {
+    margin-bottom: 0px;
 }
   
 .active {
