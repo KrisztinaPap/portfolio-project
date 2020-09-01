@@ -88,13 +88,15 @@ h3 {
 ul {
     display: none;
     text-align: left;
+    margin-right: 20px;
 }
 
 li {
     padding-top: 4px;
 }
 
-.orangeButton {
+.orangeButton,
+.orangeButton:visited {
     background-color: var(--main-orange);
     color: var(--main-white);
     font-family: 'Russo One', sans-serif;
@@ -102,7 +104,8 @@ li {
     border-radius: 15px;
 }
 
-.orangeSubLevelButton {
+.orangeSubLevelButton,
+.orangeSubLevelButton:visited {
     background-color: var(--main-white);
     color: var(--main-orange);
     border: 1px solid var(--main-orange);
@@ -114,7 +117,8 @@ li {
 .orangeButton:hover,
 .orangeButton:focus,
 .orangeSubLevelButton:hover,
-.orangeSubLevelButton:focus {
+.orangeSubLevelButton:focus
+{
     box-shadow: 10px 10px 5px var(--main-gray);
     width: 85vw;    
 }
