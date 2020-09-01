@@ -268,3 +268,7 @@ i {
     filter: grayscale(50%);
     border: 2px solid var(--main-orange);
 }
+
+figcaption {
+    font-size: 0.8rem;
+}
