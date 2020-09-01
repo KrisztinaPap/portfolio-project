@@ -88,7 +88,6 @@ h3 {
 ul {
     display: none;
     text-align: left;
-
 }
 
 li {
@@ -103,8 +102,19 @@ li {
     border-radius: 15px;
 }
 
+.orangeSubLevelButton {
+    background-color: var(--main-white);
+    color: var(--main-orange);
+    border: 1px solid var(--main-orange);
+    font-family: 'Russo One', sans-serif;
+    font-size: 18px;
+    border-radius: 15px;
+}
+
 .orangeButton:hover,
-.orangeButton:focus {
+.orangeButton:focus,
+.orangeSubLevelButton:hover,
+.orangeSubLevelButton:focus {
     box-shadow: 10px 10px 5px var(--main-gray);
     width: 85vw;    
 }
@@ -127,7 +137,7 @@ li {
     padding-left: 0;
 }
 
-#freelancer li:first-child,
+#freelancer li,
 #eslInstructor li:first-child,
 #executiveAssociate li:first-child,
 #timeEntryLead li:first-child,
@@ -136,6 +146,22 @@ li {
     margin-left: -20px;
     margin-right:15 px;
     padding-bottom: 10px;
+}
+
+#eslInstructor li,
+#executiveAssociate li,
+#timeEntryLead li,
+#trainingSpecialist li {
+    padding-top: 6px;
+}
+
+#freelancer .subLevel li:first-child {
+    margin-top: 10px;
+}
+
+#freelancer .subLevel li {
+    list-style-type: disc;
+    padding-top: 6px;
 }
 
 #education li {
