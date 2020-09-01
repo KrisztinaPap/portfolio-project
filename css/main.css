@@ -63,6 +63,26 @@ main {
     color: var(--main-white);
 }   
 
+/****************** Header style settings *******************/
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+}
+
+h3 {
+    padding-top: 2rem;
+}
+
+#logo {
+    height: 50px;
+    padding: 6px;
+    border-radius: 50%;
+}
+
 /****************** Expanding area style settings *******************/
 
 ul {
@@ -73,6 +93,28 @@ ul {
 
 li {
     padding-top: 4px;
+}
+
+.orangeButton {
+    background-color: var(--main-orange);
+    color: var(--main-white);
+    font-family: 'Russo One', sans-serif;
+    font-size: 18px;
+    border-radius: 15px;
+}
+
+.orangeButton:hover,
+.orangeButton:focus {
+    box-shadow: 10px 10px 5px var(--main-gray);
+    width: 85vw;    
+}
+
+.expandIcon {  
+    width: 80vw;
+    text-align: left;
+    padding: 2px;
+    margin-top: 0.2rem;
+  
 }
 
 #frontEnd ul,
@@ -104,23 +146,16 @@ li {
     display: block;
 }
 
-.orangeButton {
-    background-color: var(--main-orange);
-    color: var(--main-white);
-    font-family: 'Russo One', sans-serif;
-    font-size: 18px;
-    border-radius: 15px;
+/****************** Contact area style settings *******************/
+
+input {
+    margin-bottom: 16px;
+    width: 100%;
 }
 
-.orangeButton:hover,
-.orangeButton:focus {
-    box-shadow: 10px 10px 5px var(--main-gray);
-}
-
-.expandIcon {  
-    width: 80vw;
-    text-align: left;
-    padding: 2px;
+i {
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 #contact {
@@ -148,38 +183,8 @@ li {
     box-shadow: 10px 10px 5px grey;
 }
 
-input {
-    margin-bottom: 16px;
-    width: 100%;
-}
-
 #emailBody {
     width: 100%;
-}
-
-i {
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-/****************** Header style settings *******************/
-
-h1,
-h2,
-h3,
-h4 {
-    font-family: 'Russo One', sans-serif;
-    text-align: center;
-}
-
-h3 {
-    padding-top: 2rem;
-}
-
-#logo {
-    height: 50px;
-    padding: 6px;
-    border-radius: 50%;
 }
 
 /****************** Footer style settings *******************/
