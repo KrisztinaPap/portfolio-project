@@ -12,8 +12,11 @@
 }
 
 main {
-    margin: 8px;
     text-align: center;
+}
+
+section {
+    margin: 10px;
 }
 
 /****************** Navigation styles *******************/
@@ -228,6 +231,7 @@ i {
     font-size: 0.7rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    border-top: 2px solid var(--main-orange);
 }
 
 #footer ul {
@@ -257,16 +261,19 @@ i {
     animation-timing-function: ease-out;
     animation-duration: 1.5s;
 }
+.photoFigure {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
 
 .photo {
     width: 100%;
     height: 170px;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 2rem;
-    border-radius: 15px;
-    filter: grayscale(50%);
-    border: 2px solid var(--main-orange);
+    margin-top: 2rem; 
+    margin-left: 0;
+    border-bottom: 2px solid var(--main-orange);
 }
 
 figcaption {
