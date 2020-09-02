@@ -356,7 +356,7 @@ figcaption {
         display: flex !important;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: space-between;
+        justify-content: center;
         padding: 0.5rem;
     }
 
