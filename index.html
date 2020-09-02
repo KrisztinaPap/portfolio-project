@@ -21,7 +21,7 @@
 <body>
     <header>
         <nav class="topNav" id="topNav">
-            <a href="javascript:void(0);" class="icon" id="menuButton" onclick="myMenu()"><i class="fa fa-bars"></i></a>
+            <a aria-label="A hamburger menu" class="icon" id="menuButton" onclick="myMenu()"><i class="fa fa-bars" aria-hidden="true"></i></a>
             <div id="myMenu">
                 <a href="#objective-anchor" class="active">My Objective</a>
                 <a href="#skills-anchor">My Skills</a>
@@ -330,12 +330,12 @@
         <section id="contact">
             <img id="contact-anchor" class="logo" src="/images/kp-logo-transparent.png" alt="Krisztina Pap's logo: arrow brackets with a heart and her initials kp inside">
             <h2 id="contactHeading">Contact Me</h2>
-            <form action="#" method="post" onsubmit="sendMail(); return false " enctype="text/plain" id="contactForm">
+            <form action="#" method="post" onsubmit="sendMail(); return false" enctype="text/plain" id="contactForm">
                 <label for="emailAddress">Your email:</label><br>
                 <input type="text" id="emailAddress" name="emailAddress" value=""><br>
                 <label for="emailSubject">Email subject:</label><br>
                 <input type="text" id="emailSubject" name="emailSubject" value=""><br>
-                <p>Your message:</p>
+                <label for="emailBody">Your message:</label>
                 <textarea name="emailBody" id="emailBody" rows="5" cols="30"></textarea>
                 <button id="sendMailButton" class="orangeButton" type="submit">Send Email</button>
             </form>
@@ -345,9 +345,8 @@
     <footer id="footer">
         <section id="links">
             <h3 class="screen-reader-text">Social Links</h3>
-            <a href="https://github.com/KrisztinaPap" id="gitHubLink"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/krisztinapap/" id="linkedInLink"><i class="fab fa-linkedin"></i></a>
-            <a href="#" id="emailLink"><i class="far fa-envelope"></i></a>
+            <a href="https://github.com/KrisztinaPap" aria-label="Link to Krisztina's GitHub account" id="gitHubLink"><i class="fab fa-github" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/krisztinapap/" aria-label="Link to Krisztina's LinkedIn account" id="linkedInLink"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
         </section>
         Copyright &copy; 2020 by Krisztina Pap
     </footer>
