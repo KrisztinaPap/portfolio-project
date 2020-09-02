@@ -191,7 +191,7 @@ i {
 }
 
 #contact {
-    padding-top: 2rem;
+    padding-top: 0;
     padding-bottom: 2rem;
     width: 80vw;
     margin: 0 auto;
@@ -373,6 +373,11 @@ figcaption {
         justify-content: space-between;
         margin-top: 3rem;
     }
+
+    .portfolioFigure {
+        flex: 1 0 45%;
+    }
+
     .portfolioFigure > figure {
         margin: 16px;
     }
