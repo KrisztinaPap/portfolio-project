@@ -278,19 +278,38 @@ figcaption {
     font-size: 0.8rem;
 }
 
+/****************** Portfolio section style settings *******************/
+
 #portfolio {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+    align-items: auto;
+    align-content: center;
+}
+
+.portfolioFigure {
+    display: inline-block;
+    flex: 1;
 }
 
 .portfolioThumb {
     width: 100%;
+    max-width: 500px;
+    border: 1px solid var(--main-orange);
+    border-radius: 16px;
+}
+
+.portfolioThumb:hover,
+.portfolioThumb:focus {
+    box-shadow: 10px 10px 5px grey;
 }
 
 /****************** Tablet media query style settings *******************/
 
-@media screen and ( min-width: 760px ) {
+
+@media screen and ( min-width: 900px ) {
     .topNav a.icon {
         display: none;
     }
@@ -347,6 +366,17 @@ figcaption {
     .photo {
         height: 340px;
     }
+    
+    #portfolio {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 3rem;
+    }
+    .portfolioFigure > figure {
+        margin: 16px;
+    }
+
 }
 
 @media screen and ( min-width: 1100px ) {
