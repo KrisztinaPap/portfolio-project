@@ -21,32 +21,35 @@
 <body>
     <header>
         <nav class="topNav" id="topNav">
-            <img id="logo" src="/images/kp-logo-solid.png" alt="Krisztina Pap logo">
-            <div id="myMenu">
-                <a href="#objective" class="active">My Objective</a><hr>
-                <a href="#workExperience">My Work Experience</a><hr>
-                <a href="#education">My Education</a><hr>
-                <a href="#portfolio">My Portfolio</a><hr>
-                <a href="#contact">Contact Me</a><hr>
-            </div>
             <a href="javascript:void(0);" class="icon" id="menuButton" onclick="myMenu()"><i class="fa fa-bars"></i></a>
+            <div id="myMenu">
+                <a href="#objective-anchor" class="active">My Objective</a><hr>
+                <a href="#skills-anchor">My Skills</a><hr>
+                <a href="#workExperience-anchor">My Work Experience</a><hr>
+                <a href="#education-anchor">My Education</a><hr>
+                <a href="#portfolio-anchor">My Portfolio</a><hr>
+                <a href="#contact-anchor">Contact Me</a><hr>
+            </div>
+            
+
         </nav>
 
+        <a href="#"><img id="logo" src="/images/kp-logo-solid.png" alt="Krisztina Pap's logo: arrow brackets with a heart and her initials kp inside"></a>
         <h1>Krisztina Pap</h1>
         <h2>Full-stack<br>Software Developer</h2>
     </header>
 
     <main>
-        <section id="objective">
+        <section id="objective-anchor">
             <h3>My Objective</h3>
             <p>I'm an experienced remote worker with a strong background in office administration, training, project management, and tech. I'm self-motivated, adaptable, and love a good challenge. I enjoy developing and maintaining high-quality code for interesting projects both by myself and as part of a team. </p>
         </section>
 
         <figure class="photoFigure">
-            <img class="photo" src="/images/Krisztina-profile-collage-2.png" alt="Collage of Krisztina's work and skills">
+            <img class="photo" src="/images/Krisztina-profile-collage-2.png" alt="A collage of Krisztina's work and technologies she is proficient with">
         </figure>
         
-        <section id="skills">
+        <section id="skills-anchor">
             <h3>My Relevant Skills</h3>
             <p>As a full-stack software developer, I have experience working with a wide variety of technologies including but not limited to HTML/CSS, JavaScript, React.js, C#, Python, MongoDB, and Git.</p>
 
@@ -121,7 +124,7 @@
             </div>   
         </section>
 
-        <section id="workExperience">
+        <section id="workExperience-anchor">
             <h3>My Work Experience</h3>
 
             <div id="freelancer">
@@ -234,7 +237,7 @@
             </div>
         </section>
 
-        <section id="education">
+        <section id="education-anchor">
             <h3>My Education</h3>
             <h4>Formal Education</h4>
                 <ul id="formalEducation">
@@ -264,17 +267,17 @@
         </section>
 
         <figure class="photoFigure">
-            <img class="photo" src="/images/Krisztina-profile-collage-4.png" alt="Collage of Krisztina's work and skills">
+            <img class="photo" src="/images/Krisztina-profile-collage-4.png" alt="A collage of Krisztina's work and technologies she is proficient with">
         </figure>
 
-        <section>
+        <section id="portfolio-anchor">
             <h3>My Portfolio Highlights</h3>
-          
+            <p>Visit my Github! <a href="https://github.com/KrisztinaPap" id="gitHubLinkBig"><i class="fab fa-github"></i></a></p>
             <div id="portfolio">
                 <div class="portfolioFigure">
                     <figure>
                         <a href="https://github.com/KrisztinaPap/C-IntroPracticeProblems">
-                            <img class="portfolioThumb" src="/images/c-sharp-practice-projects.png" alt="Thumbnail for C# projects">
+                            <img class="portfolioThumb" src="/images/c-sharp-practice-projects.png" alt="Thumbnail for Krisztina's C# projects">
                         </a>
                         <figcaption>C# projects - GitHub repository</figcaption>
                     </figure>
@@ -282,7 +285,7 @@
                 <div class="portfolioFigure">
                     <figure>
                         <a href="https://krisztinapap.github.io/js-hangman-game/">
-                            <img class="portfolioThumb" src="/images/js-hangman-game-1.png" alt="Thumbnail for JavaScript Hangman Game">
+                            <img class="portfolioThumb" src="/images/js-hangman-game-1.png" alt="Thumbnail for Krisztina's JavaScript Hangman Game">
                         </a>
                         <figcaption>Hangman Game - live demo<br><a href="https://github.com/KrisztinaPap/js-hangman-game">GitHub repository</a></figcaption>
                     </figure>
@@ -290,7 +293,7 @@
                 <div class="portfolioFigure">
                     <figure>
                         <a href="https://krisztinapap.github.io/fcc-markdown-previewer-proj/">
-                            <img class="portfolioThumb" src="/images/js-markdown-previewer.png" alt="Thumbnail for JavaScript Markdown Previewer web app">
+                            <img class="portfolioThumb" src="/images/js-markdown-previewer.png" alt="Thumbnail for Krisztina's JavaScript Markdown Previewer web app">
                         </a>
                         <figcaption>Markdown Previewer - live demo<br><a href="https://github.com/KrisztinaPap/fcc-markdown-previewer-proj">GitHub repository</a></figcaption>
                     </figure>
@@ -307,7 +310,7 @@
            
         </section>
 
-        <section id="contact">
+        <section id="contact-anchor">
             <h3 id="contactHeading">Contact Me</h3>
             <form action="#" method="post" onsubmit="sendMail(); return false " enctype="text/plain" id="contactForm">
                 <label for="emailAddress">Your email:</label><br>

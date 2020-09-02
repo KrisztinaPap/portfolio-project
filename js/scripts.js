@@ -52,7 +52,7 @@ function sendMail() {
     contactForm.reset();
 };
 
-
+const allSkillLists = document.querySelectorAll("#skills-anchor li");
 
 const frontEnd = document.getElementById("frontEnd");
 const backEnd = document.getElementById("backEnd");
@@ -93,4 +93,5 @@ function showHideMyInfo( button ) {
     x.style.display = "block";
   }
 }
+
 
