@@ -63,10 +63,7 @@ section {
     background-color: var(--main-orange);
     width: 100%;
 }
-  
-.topNav #myMenu {
-    display: none;
-}
+
 
 .topNav a {
     color: var(--main-white);
@@ -79,30 +76,31 @@ section {
 .topNav a.icon {
     background: var(--main-orange);
     display: block;
- 
     font-size: 28px;
     right: 6px;
     top: 4px;
 }
 
-.topNav a:hover {
-    background-color: var(--main-white);
-    color: var(--main-orange);
+.topNav a.icon:hover {
+    color: var(--main-blue);
 }
 
-.topNav hr {
-   
-    border-top: 1px solid var(--main-white);
+#myMenu {
+    display: none;
 }
 
-.topNav hr:last-of-type {
-    margin-bottom: 0px;
+#myMenu a {
+    margin: 3px;
+    border: 1px solid var(--main-orange) !important;
 }
-  
-.active {
-    background-color: var(--main-orange);
+
+#myMenu a:hover,
+#myMenu a:focus {
+    border: 1px solid var(--main-white) !important;
+    border-radius: 5px;
     color: var(--main-white);
-}   
+    background-color: var(--main-orange) !important;
+}
 
 /****************** Header style settings *******************/
 
@@ -171,11 +169,7 @@ li {
     margin-top: 0.2rem;
 }
 
-#frontEnd ul,
-#backEnd ul,
-#databases ul,
-#devOps ul,
-#dataScience ul {
+#skills ul {
     list-style-type: none;
     text-align: center;
     padding-left: 0;
@@ -187,8 +181,8 @@ li {
 #timeEntryLead li:first-child,
 #trainingSpecialist li:first-child {
     list-style-type: none;
-    margin-left: -20px;
-    margin-right:15 px;
+    margin-left: 15px;
+    margin-right:15px;
     padding-bottom: 10px;
 }
 
@@ -197,6 +191,7 @@ li {
 #timeEntryLead li,
 #trainingSpecialist li {
     padding-top: 6px;
+    margin-left: 20px;  
 }
 
 #freelancer .subLevel li:first-child {
@@ -360,6 +355,27 @@ figcaption {
 
 /****************** Tablet media query style settings *******************/
 
+@media screen and ( min-width: 540px ) {
+    section {
+        max-width: 700px;
+        margin: 10px auto;
+    }
+    
+    .orangeButton:hover,
+    .orangeButton:focus,
+    .orangeSubLevelButton:hover,
+    .orangeSubLevelButton:focus {
+        max-width: 700px;   
+    }
+
+    .expandIcon {  
+        max-width: 700px;  
+    }
+
+    .photo {
+        height: 340px;
+    }
+}
 
 @media screen and ( min-width: 1040px ) {
 
@@ -397,26 +413,6 @@ figcaption {
         padding: 0.5rem;
     }
 
-    section
-    {
-        max-width: 700px;
-        margin: 10px auto;
-    }
-    
-    .orangeButton:hover,
-    .orangeButton:focus,
-    .orangeSubLevelButton:hover,
-    .orangeSubLevelButton:focus
-    {
-        max-width: 700px;   
-    }
-    .expandIcon {  
-        max-width: 700px;  
-    }
-    .photo {
-        height: 340px;
-    }
-    
     #portfolio {
         flex-direction: row;
         flex-wrap: wrap;

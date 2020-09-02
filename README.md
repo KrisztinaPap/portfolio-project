@@ -16,6 +16,7 @@ September 2, 2020
 - [Webdeveloper.com: Javascript Mailto form](https://www.webdeveloper.com/d/229947-javascript-mailto-form)
 - [w3schools: Mobile Navbar](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar)
 - [StackOverflow: Remove all special characters with RegExp](https://stackoverflow.com/questions/4374822/remove-all-special-characters-with-regexp)
+- [StackOverflow: Javascript mailto using window open](https://stackoverflow.com/questions/21461589/javascript-mailto-using-window-open)
 
 
 ## Trello Project Board

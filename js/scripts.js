@@ -46,7 +46,10 @@ function sendMail() {
       //      https://www.webdeveloper.com/d/229947-javascript-mailto-form
       //      The below two lines of code build the email message from the variables we prompted the user for and then we use the user's email software in a new window to send the message
       const yourEmailMessage = `mailto:${myEmail}?cc=${eAddress}&subject=${eSubject}&body=${eBody}`;
-      window = window.open(yourEmailMessage, 'emailWindow');
+      // Citation:
+      //      https://stackoverflow.com/questions/21461589/javascript-mailto-using-window-open
+      //      Further improved the form by not opening a new browser tab every time the user clicks send.
+      location.href = yourEmailMessage;
     }
     isMessageBad = false;
     contactForm.reset();
