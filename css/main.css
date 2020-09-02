@@ -23,6 +23,7 @@ section {
 
 .topNav {
     position: fixed;
+    top: 0;
     background-color: var(--main-orange);
     width: 100%;
 }
@@ -77,14 +78,15 @@ h4 {
     text-align: center;
 }
 
-h3 {
-    padding-top: 2rem;
+h1 {
+    margin-top: 6rem;
 }
 
-#logo {
-    height: 50px;
+
+.logo {
+    height: 80px;
     padding: 6px;
-    border-radius: 50%;
+    padding-top: 2rem;
 }
 
 /****************** Expanding area style settings *******************/
@@ -171,7 +173,7 @@ li {
     padding-top: 6px;
 }
 
-#education-anchor li {
+#education li {
     padding-bottom: 8px;
 }
 
@@ -191,7 +193,7 @@ i {
     margin-right: 15px;
 }
 
-#contact-anchor {
+#contact {
     padding-top: 0;
     padding-bottom: 2rem;
     width: 80vw;
@@ -358,10 +360,6 @@ figcaption {
         flex-wrap: nowrap;
         justify-content: center;
         padding: 0.5rem;
-    }
-
-    h1 {
-        margin-top: 3rem;
     }
 
     section
