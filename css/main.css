@@ -278,6 +278,16 @@ figcaption {
     font-size: 0.8rem;
 }
 
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.portfolioThumb {
+    width: 100%;
+}
+
 /****************** Tablet media query style settings *******************/
 
 @media screen and ( min-width: 760px ) {
