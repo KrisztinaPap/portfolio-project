@@ -26,34 +26,43 @@ function sendMail() {
   //    https://stackoverflow.com/questions/4374822/remove-all-special-characters-with-regexp
   // The below line of code replaces all characters except for lower and uppercase letters, numbers, the character "'", spaces, and tabs. The caret means "everything else" and the "gi" means "global" and "case insensitive"
 
-  let cleanText = eBody.replace( /[^a-zA-Z0-9' \t]/gi, "" ); // 
-  let userMessage = cleanText.split(" ");
-
-  for ( let i = 0; i < userMessage.length; i++ )
+  if ( eAddress.length === 0 || eSubject.length === 0 || eBody.length === 0 )
   {
-    if ( badWordArray.includes( userMessage[i] ))
+    alert("You need an email address, a subject, and a message to email me!");
+  }
+  else 
+  {
+    let cleanText = eBody.replace( /[^a-zA-Z0-9' \t]/gi, "" ); // 
+    let userMessage = cleanText.split(" ");
+  
+    for ( let i = 0; i < userMessage.length; i++ )
     {
-      isMessageBad = true;
+      if ( badWordArray.includes( userMessage[i] ))
+      {
+        isMessageBad = true;
+      }
     }
+  
+    if ( isMessageBad === true )
+    {
+      alert("Let's stay professional, please!");
+    }
+    else {
+      // Citation:
+      //      https://stackoverflow.com/questions/21028939/mailto-using-javascript
+      //      https://www.webdeveloper.com/d/229947-javascript-mailto-form
+      //      The below two lines of code build the email message from the variables we prompted the user for and then we use the user's email software in a new window to send the message
+      const yourEmailMessage = `mailto:${myEmail}?cc=${eAddress}&subject=${eSubject}&body=${eBody}`;
+      // Citation:
+      //      https://stackoverflow.com/questions/21461589/javascript-mailto-using-window-open
+      //      Further improved the form by not opening a new browser tab every time the user clicks send
+      location.href = yourEmailMessage;
+    }
+    isMessageBad = false;
+    contactForm.reset();
   }
 
-  if ( isMessageBad === true )
-  {
-    alert("Let's stay professional, please!");
-  }
-  else {
-    // Citation:
-    //      https://stackoverflow.com/questions/21028939/mailto-using-javascript
-    //      https://www.webdeveloper.com/d/229947-javascript-mailto-form
-    //      The below two lines of code build the email message from the variables we prompted the user for and then we use the user's email software in a new window to send the message
-    const yourEmailMessage = `mailto:${myEmail}?cc=${eAddress}&subject=${eSubject}&body=${eBody}`;
-    // Citation:
-    //      https://stackoverflow.com/questions/21461589/javascript-mailto-using-window-open
-    //      Further improved the form by not opening a new browser tab every time the user clicks send
-    location.href = yourEmailMessage;
-  }
-  isMessageBad = false;
-  contactForm.reset();
+ 
 };
 
 
