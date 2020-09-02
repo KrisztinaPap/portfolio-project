@@ -8,7 +8,7 @@ To build a nice resume/portfolio site using HTML, CSS, and JavaScript
 Krisztina Pap
 
 ## Last Edit
-September 1, 2020
+September 2, 2020
 
 ## Resources
 - [Normalize.css](https://cssreset.com/scripts/normalize-css/)
@@ -16,7 +16,6 @@ September 1, 2020
 - [Webdeveloper.com: Javascript Mailto form](https://www.webdeveloper.com/d/229947-javascript-mailto-form)
 - [w3schools: Mobile Navbar](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar)
 - [StackOverflow: Remove all special characters with RegExp](https://stackoverflow.com/questions/4374822/remove-all-special-characters-with-regexp)
-- [Pixabay: photo of laptop (no attribution required)](https://pixabay.com/photos/keyboard-computer-technology-light-5017973/)
 
 
 ## Trello Project Board
