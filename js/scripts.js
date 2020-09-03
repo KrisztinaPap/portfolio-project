@@ -88,6 +88,7 @@ function myMenu() {
 //Citation:
 //      https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar
 //      The below code block was modified to show/hide blocks of the code (expanding buttons)
+//      It also adds/removes the appropriate icon classes to display a '+' or '-' icon (showing whether the area is expanded or not)
 function showHideMyInfo( button ) {
   let expandButton = button.nextElementSibling;
   let myIcon = button.firstChild;

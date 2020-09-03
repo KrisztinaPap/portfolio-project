@@ -17,6 +17,7 @@ September 3, 2020
 - [w3schools: Mobile Navbar](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar)
 - [StackOverflow: Remove all special characters with RegExp](https://stackoverflow.com/questions/4374822/remove-all-special-characters-with-regexp)
 - [StackOverflow: Javascript mailto using window open](https://stackoverflow.com/questions/21461589/javascript-mailto-using-window-open)
+- [StackOverflow: I'm getting favicon.ico error](https://stackoverflow.com/questions/31075893/im-getting-favicon-ico-error/)
 
 
 ## Trello Project Board
