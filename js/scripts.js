@@ -75,11 +75,11 @@ function sendMail() {
 //      https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar
 //      The below code block hides/shows my nav menu
 function myMenu() {
-    let x = document.getElementById("myMenu");
-    if (x.style.display === "block") {
-      x.style.display = "none";
+    let myMenu = document.getElementById("myMenu");
+    if (myMenu.style.display === "block") {
+      myMenu.style.display = "none";
     } else {
-      x.style.display = "block";
+      myMenu.style.display = "block";
     }
 }
 
@@ -92,11 +92,16 @@ function myMenu() {
 //      https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar
 //      The below code block was modified to show/hide blocks of the code (expanding buttons)
 function showHideMyInfo( button ) {
-  let x = button.nextElementSibling;
-  
-  if (x.style.display === "block") {
-    x.style.display = "none";
+  let expandButton = button.nextElementSibling;
+  let myIcon = button.firstChild;
+
+  if (expandButton.style.display === "block") {
+    expandButton.style.display = "none";
+    myIcon.classList.remove("fa-minus-square");
+    myIcon.classList.add("fa-plus-square");
   } else {
-    x.style.display = "block";
+    expandButton.style.display = "block";
+    myIcon.classList.remove("fa-plus-square");
+    myIcon.classList.add("fa-minus-square");
   }
 }
