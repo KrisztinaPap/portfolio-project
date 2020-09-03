@@ -307,8 +307,14 @@ i {
 }
 
 figcaption {
+    margin-bottom: 0rem;
+    margin-top: 0rem;
     font-size: 0.8rem;
-    padding-top: 0.6rem;
+}
+
+figcaption p {
+    margin-bottom: 0rem;
+    margin-top: 0.2rem;
 }
 
 #gitHubLinkBig {
