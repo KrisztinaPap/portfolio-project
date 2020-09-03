@@ -28,7 +28,31 @@ function sendMail() {
 
   if ( eAddress.length === 0 || eSubject.length === 0 || eBody.length === 0 )
   {
-    alert("You need an email address, a subject, and a message to email me!");
+    const errorArea = document.getElementById( "errorArea" );
+    const newUL = document.createElement( 'UL' );
+    newUL.style.display = "block";
+    newUL.style.color = "#A6122D";
+
+    if ( eAddress.length === 0 )
+    {
+      const newLI = document.createElement( 'LI' );
+      newLI.textContent = "You need to enter an email address";
+      newUL.appendChild( newLI );
+    }
+    if ( eSubject.length === 0 )
+    {
+      const newLI = document.createElement( 'LI' );
+      newLI.textContent = "You need to enter an email subject";
+      newUL.appendChild( newLI );
+    }
+    if ( eBody.length === 0 )
+    {
+      const newLI = document.createElement( 'LI' );
+      newLI.textContent = "You need to enter a message (the body of the email)";
+      newUL.appendChild( newLI );
+    }
+    errorArea.innerHTML = "";
+    errorArea.appendChild( newUL );
   }
   else 
   {
@@ -58,6 +82,7 @@ function sendMail() {
       location.href = yourEmailMessage;
     }
     isMessageBad = false;
+    errorArea.innerHTML = "";
     contactForm.reset();
   }
 };
