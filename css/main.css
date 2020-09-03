@@ -64,7 +64,6 @@ section {
     width: 100%;
 }
 
-
 .topNav a {
     color: var(--main-white);
     padding: 8px;
@@ -157,8 +156,7 @@ li {
 .orangeButton:hover,
 .orangeButton:focus,
 .orangeSubLevelButton:hover,
-.orangeSubLevelButton:focus
-{
+.orangeSubLevelButton:focus {
     box-shadow: 10px 10px 5px var(--main-gray);   
 }
 
@@ -293,6 +291,7 @@ i {
     animation-timing-function: ease-out;
     animation-duration: 1.5s;
 }
+
 .photoFigure {
     margin-left: 0 !important;
     margin-right: 0 !important;

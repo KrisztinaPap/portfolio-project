@@ -42,7 +42,6 @@ function sendMail() {
         isMessageBad = true;
       }
     }
-  
     if ( isMessageBad === true )
     {
       alert("Let's stay professional, please!");
@@ -61,8 +60,6 @@ function sendMail() {
     isMessageBad = false;
     contactForm.reset();
   }
-
- 
 };
 
 
