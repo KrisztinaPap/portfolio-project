@@ -209,31 +209,32 @@ li {
     display: block;
 }
 
-/****************** Download button style settings *******************/
-
-.downloadButton {
-    width: 220px;
-    height: 56px;
-    background-color: var(--main-white);
-    border: 2px solid var(--main-orange);
-    display: block;
-    margin-top: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 16px;
-    transition-duration: 0.5s;
-}
-
-.downloadButton:hover,
-.downloadButton:focus {
-    color: var(--main-white);
-    box-shadow: 10px 10px 5px var(--main-gray);  
-}
-
+/****************** Download link style settings *******************/
 
 .downloadLink {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 220px;
+    height: 50px;
+    background-color: var(--main-white);
+    border: 2px solid var(--main-orange);
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    border-radius: 16px;
+    transition-duration: 0.5s;
     color: var(--main-orange);
     text-decoration: none;
+}
+
+.downloadLink:hover,
+.downloadLink:focus {
+    box-shadow: 10px 10px 5px var(--main-gray); 
 }
 
 /****************** Contact area style settings *******************/
