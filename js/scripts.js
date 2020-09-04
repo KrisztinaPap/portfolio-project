@@ -10,7 +10,7 @@ function sendMail() {
   const eBody = document.getElementById( "emailBody" ).value;
   const myEmail = "krisztina.pap@outlook.com";
   let isMessageBad = false;
-  let badWordArray = [
+  const badWordArray = [
     "feldercarb",   // Swear word in Battlestar Galactica
     "frack",        // Swear word in Battlestar Galactica
     "skinjob",      // Swear word in Battlestar Galactica
@@ -97,7 +97,7 @@ function sendMail() {
 //      https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar
 //      The below code block hides/shows my nav menu
 function myMenu() {
-    let myMenu = document.getElementById("myMenu");
+    const myMenu = document.getElementById("myMenu");
     if (myMenu.style.display === "block") {
       myMenu.style.display = "none";
     } else {
