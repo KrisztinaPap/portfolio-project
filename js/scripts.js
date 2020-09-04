@@ -56,8 +56,9 @@ function sendMail() {
   }
   else 
   {
-    let cleanText = eBody.replace( /[^a-zA-Z0-9' \t]/gi, "" ); // 
-    let userMessage = cleanText.split(" ");
+    let cleanText = eBody.replace( /[^a-zA-Z0-9' \t]/gi, "" );
+    let lowerText = cleanText.toLowerCase(); 
+    let userMessage = lowerText.split(" ");
   
     for ( let i = 0; i < userMessage.length; i++ )
     {
