@@ -209,6 +209,32 @@ li {
     display: block;
 }
 
+/****************** Download button style settings *******************/
+
+.downloadButton {
+    width: 220px;
+    height: 56px;
+    background-color: var(--main-white);
+    border: 2px solid var(--main-orange);
+}
+
+.downloadButton:hover,
+.downloadButton:focus {
+    background-color: var(--main-orange); 
+    color: var(--main-white);
+}
+
+.downloadButton i {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.downloadLink {
+    color: var(--main-orange);
+    display: block;
+    margin-top: 2rem;
+}
+
 /****************** Contact area style settings *******************/
 
 input {
