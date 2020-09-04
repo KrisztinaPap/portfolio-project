@@ -8,7 +8,7 @@ To build a nice resume/portfolio site using HTML, CSS, and JavaScript
 Krisztina Pap
 
 ## Last Edit
-September 3, 2020
+September 4, 2020
 
 ## Resources
 - [Normalize.css](https://cssreset.com/scripts/normalize-css/)
@@ -18,6 +18,7 @@ September 3, 2020
 - [StackOverflow: Remove all special characters with RegExp](https://stackoverflow.com/questions/4374822/remove-all-special-characters-with-regexp)
 - [StackOverflow: Javascript mailto using window open](https://stackoverflow.com/questions/21461589/javascript-mailto-using-window-open)
 - [StackOverflow: I'm getting favicon.ico error](https://stackoverflow.com/questions/31075893/im-getting-favicon-ico-error/)
+- [w3.org: WAI-ARIA](https://www.w3.org/TR/wai-aria/)
 
 
 ## Trello Project Board
