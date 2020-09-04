@@ -216,23 +216,24 @@ li {
     height: 56px;
     background-color: var(--main-white);
     border: 2px solid var(--main-orange);
+    display: block;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 16px;
+    transition-duration: 0.5s;
 }
 
 .downloadButton:hover,
 .downloadButton:focus {
-    background-color: var(--main-orange); 
     color: var(--main-white);
+    box-shadow: 10px 10px 5px var(--main-gray);  
 }
 
-.downloadButton i {
-    margin-left: 0;
-    padding-left: 0;
-}
 
 .downloadLink {
     color: var(--main-orange);
-    display: block;
-    margin-top: 2rem;
+    text-decoration: none;
 }
 
 /****************** Contact area style settings *******************/
@@ -376,6 +377,7 @@ figcaption p {
     max-width: 500px;
     border: 3px solid var(--main-orange);
     border-radius: 16px;
+    transition-duration: 0.5s;
 }
 
 .portfolioThumb:hover,
