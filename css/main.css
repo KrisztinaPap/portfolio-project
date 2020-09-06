@@ -458,6 +458,10 @@ figcaption p {
         flex: 1 0 45%;
     }
 
+    .portfolioThumb {
+        max-width: 350px;
+    }
+
     .portfolioFigure > figure {
         margin: 16px;
     }
