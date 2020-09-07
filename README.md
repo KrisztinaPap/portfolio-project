@@ -8,7 +8,7 @@ To build a nice resume/portfolio site using HTML, CSS, and JavaScript
 Krisztina Pap
 
 ## Last Edit
-September 6, 2020
+September 7, 2020
 
 ## Resources
 - [Normalize.css](https://cssreset.com/scripts/normalize-css/)

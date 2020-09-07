@@ -56,6 +56,13 @@ function sendMail() {
   }
   else 
   {
+    let lowerEmail = eAddress.toLowerCase();
+    let userEmail = lowerEmail.split("@");
+
+    let cleanSubject = eSubject.replace( /[^a-zA-Z0-9' \t]/gi, "" );
+    let lowerSubject = cleanSubject.toLowerCase();
+    let userSubject = lowerSubject.split(" ");
+
     let cleanText = eBody.replace( /[^a-zA-Z0-9' \t]/gi, "" );
     let lowerText = cleanText.toLowerCase(); 
     let userMessage = lowerText.split(" ");
@@ -63,6 +70,20 @@ function sendMail() {
     for ( let i = 0; i < userMessage.length; i++ )
     {
       if ( badWordArray.includes( userMessage[i] ))
+      {
+        isMessageBad = true;
+      }
+    }
+    for ( let i = 0; i < userSubject.length; i++ )
+    {
+      if ( badWordArray.includes ( userSubject[i] ))
+      {
+        isMessageBad = true;
+      }
+    }
+    for ( let i = 0; i < userEmail.length; i++ )
+    {
+      if ( badWordArray.includes( userEmail[i] ))
       {
         isMessageBad = true;
       }
