@@ -56,11 +56,6 @@ section {
     z-index: 100000; /* Above WP toolbar. */
 }
 
-.errorMessages {
-    display: block;
-    color: var(--main-red);
-}
-
 /****************** Navigation styles *******************/
 
 .topNav {
@@ -88,10 +83,6 @@ section {
 
 .topNav a.icon:hover {
     color: var(--main-blue);
-}
-
-#myMenu {
-    display: none;
 }
 
 #myMenu a {
@@ -171,6 +162,13 @@ li {
     text-align: left;
     padding: 2px;
     margin-top: 0.2rem;
+}
+
+.showArea {
+    display: block;
+}
+.hideArea {
+    display: none;
 }
 
 #skills ul {
@@ -282,6 +280,11 @@ i {
 
 #emailBody {
     width: 100%;
+}
+
+.errorMessages {
+    display: block;
+    color: var(--main-red);
 }
 
 /****************** Footer style settings *******************/

@@ -22,10 +22,6 @@ function sendMail() {
     "bhijoi"        // Swear word in Firefly/Serenity 
   ];
 
-  // Citation:
-  //    https://stackoverflow.com/questions/4374822/remove-all-special-characters-with-regexp
-  // The below line of code replaces all characters except for lower and uppercase letters, numbers, the character "'", spaces, and tabs. The caret means "everything else" and the "gi" means "global" and "case insensitive"
-
   if ( eAddress.length === 0 || eSubject.length === 0 || eBody.length === 0 )
   {
     const errorArea = document.getElementById( "errorArea" );
@@ -58,6 +54,9 @@ function sendMail() {
     let lowerEmail = eAddress.toLowerCase();
     let userEmail = lowerEmail.split("@");
 
+    // Citation:
+    //    https://stackoverflow.com/questions/4374822/remove-all-special-characters-with-regexp
+    // The below line of code replaces all characters except for lower and uppercase letters, numbers, the character "'", spaces, and tabs. The caret means "everything else" and the "gi" means "global" and "case insensitive"
     let cleanSubject = eSubject.replace( /[^a-zA-Z0-9' \t]/gi, "" );
     let lowerSubject = cleanSubject.toLowerCase();
     let userSubject = lowerSubject.split(" ");
@@ -95,7 +94,7 @@ function sendMail() {
       // Citation:
       //      https://stackoverflow.com/questions/21028939/mailto-using-javascript
       //      https://www.webdeveloper.com/d/229947-javascript-mailto-form
-      //      The below two lines of code build the email message from the variables we prompted the user for and then we use the user's email software in a new window to send the message
+      //      The next two lines of code build the email message from the variables we prompted the user for and then we use the user's email software in a new window to send the message
       const yourEmailMessage = `mailto:${myEmail}?cc=${eAddress}&subject=${eSubject}&body=${eBody}`;
       // Citation:
       //      https://stackoverflow.com/questions/21461589/javascript-mailto-using-window-open
@@ -111,7 +110,7 @@ function sendMail() {
 
 // MyMenu function
 //    Inputs: Buttonclick
-//    Outputs: The style display attribute toggles between "block" and "none" on the nav items
+//    Outputs: The classes 'showArea' and 'hideArea' toggle (get added/removed) to change the display from 'block' to 'none' and back.
 //    Purpose: To hide and show the menu items when the user clicks on the menu button
 
 //Citation:
@@ -119,16 +118,19 @@ function sendMail() {
 //      The below code block hides/shows my nav menu
 function myMenu() {
     const myMenu = document.getElementById("myMenu");
-    if (myMenu.style.display === "block") {
-      myMenu.style.display = "none";
+
+    if ( myMenu.classList.contains( "hideArea")) {
+      myMenu.classList.remove( "hideArea" );
+      myMenu.classList.add( "showArea" );
     } else {
-      myMenu.style.display = "block";
+      myMenu.classList.remove( "showArea" );
+      myMenu.classList.add( "hideArea" );
     }
 }
 
 // showHideMyInfo function
 //    Inputs: Buttonclick
-//    Outputs:  The style display attribute toggles between "block" and "none" on the lists under the expanding buttons
+//    Outputs: The classes 'showArea' and 'hideArea' toggle (get added/removed) to change the display from 'block' to 'none' and back for the expanding sections
 //    Purpose: To show and hide the skills, work experience, and certificates detailed information
 
 //Citation:
@@ -139,12 +141,14 @@ function showHideMyInfo( button ) {
   let expandButton = button.nextElementSibling;
   let myIcon = button.firstChild;
 
-  if (expandButton.style.display === "block") {
-    expandButton.style.display = "none";
+  if ( expandButton.classList.contains( "showArea" )) {
+    expandButton.classList.remove( "showArea" );
+    expandButton.classList.add( "hideArea");
     myIcon.classList.remove("fa-minus-square");
     myIcon.classList.add("fa-plus-square");
   } else {
-    expandButton.style.display = "block";
+    expandButton.classList.remove( "hideArea");
+    expandButton.classList.add( "showArea" );
     myIcon.classList.remove("fa-plus-square");
     myIcon.classList.add("fa-minus-square");
   }
