@@ -56,6 +56,11 @@ section {
     z-index: 100000; /* Above WP toolbar. */
 }
 
+.errorMessages {
+    display: block;
+    color: var(--main-red);
+}
+
 /****************** Navigation styles *******************/
 
 .topNav {

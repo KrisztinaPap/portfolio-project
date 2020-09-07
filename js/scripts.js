@@ -30,8 +30,7 @@ function sendMail() {
   {
     const errorArea = document.getElementById( "errorArea" );
     const newUL = document.createElement( 'UL' );
-    newUL.style.display = "block";
-    newUL.style.color = "#A6122D";
+    newUL.classList.add( "errorMessages" );
 
     if ( eAddress.length === 0 )
     {
