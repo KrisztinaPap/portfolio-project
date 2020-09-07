@@ -153,3 +153,28 @@ function showHideMyInfo( button ) {
     myIcon.classList.add("fa-minus-square");
   }
 }
+
+function mouseOverLink( event ) {
+  const PopUpLinkLabelsArea = document.getElementById( "pop-up-link-labels-area" );
+  PopUpLinkLabelsArea.textContent = this.id;
+}
+
+function mouseLeaveLink (event) {
+  const PopUpLinkLabelsArea = document.getElementById( "pop-up-link-labels-area" );
+  PopUpLinkLabelsArea.textContent = "";
+}
+
+const gitHubLink = document.getElementById( "gitHubLink" );
+const twitterLink = document.getElementById( "twitterLink" );
+const linkedInLink = document.getElementById( "linkedInLink" );
+const downloadPDF = document.getElementById( "downloadPDF" );
+
+gitHubLink.addEventListener( "mouseover", mouseOverLink );
+twitterLink.addEventListener( "mouseover", mouseOverLink );
+linkedInLink.addEventListener( "mouseover", mouseOverLink );
+downloadPDF.addEventListener( "mouseover", mouseOverLink );
+
+gitHubLink.addEventListener( "mouseleave", mouseLeaveLink );
+twitterLink.addEventListener( "mouseleave", mouseLeaveLink );
+linkedInLink.addEventListener( "mouseleave", mouseLeaveLink );
+downloadPDF.addEventListener( "mouseleave", mouseLeaveLink );

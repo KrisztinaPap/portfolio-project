@@ -367,6 +367,14 @@ figcaption p {
     color: var(--main-orange);
 }
 
+#pop-up-link-labels-area {
+    display: block;
+    width: 100%;
+    min-height: 40px;
+    font-size: 1rem;
+    color: var(--main-orange);
+}
+
 /****************** Portfolio section style settings *******************/
 
 #portfolio {
