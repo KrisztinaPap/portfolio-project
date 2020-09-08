@@ -155,12 +155,12 @@ function showHideMyInfo( button ) {
 }
 
 function mouseOverLink() {
-  const PopUpLinkLabelsArea = document.getElementById( "pop-up-link-labels-area" );
+  const PopUpLinkLabelsArea = document.getElementById( "popUpLinkLabelsArea" );
   PopUpLinkLabelsArea.textContent = this.id;
 }
 
 function mouseLeaveLink () {
-  const PopUpLinkLabelsArea = document.getElementById( "pop-up-link-labels-area" );
+  const PopUpLinkLabelsArea = document.getElementById( "popUpLinkLabelsArea" );
   PopUpLinkLabelsArea.textContent = "";
 }
 
